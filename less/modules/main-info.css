@@ -1,0 +1,127 @@
+.info {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.info__text {
+  margin: 0;
+  padding: 0;
+  font-family: 'open_sansbold', Arial, sans-serif;
+  font-size: 25px;
+  line-height: 0;
+}
+.info__list {
+  margin: 0;
+  padding: 0;
+  font-family: 'open_sansbold', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+.info__list .info__item {
+  width: 260px;
+  margin-top: 110px;
+  position: relative;
+}
+.info__list .info__item--img1:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-1.png");
+  background-repeat: no-repeat;
+}
+.info__list .info__item--img2:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-2.png");
+  background-repeat: no-repeat;
+}
+.info__list .info__item--img3:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-3.png");
+  background-repeat: no-repeat;
+}
+.info__list .info__item--img4:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-4.png");
+  background-repeat: no-repeat;
+}
+.info__list .info__item--img5:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-5.png");
+  background-repeat: no-repeat;
+}
+.info__list .info__item--img6:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  width: 60px;
+  height: 40px;
+  background-image: url("../img/info-icon-6.png");
+  background-repeat: no-repeat;
+}
+@media (min-width: 670px) {
+  .info {
+    width: 670px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .info__text {
+    font-size: 43px;
+  }
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .info__list .info__item {
+    width: 335px;
+  }
+  .info__list .info__item .info__list-text {
+    display: block;
+    width: 300px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 1050px) {
+  .info {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+  .info__text {
+    font-size: 53px;
+  }
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info__list .info__item {
+    width: 335px;
+  }
+  .info__list .info__item .info__list-text {
+    display: block;
+    width: 300px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
