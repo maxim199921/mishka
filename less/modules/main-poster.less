@@ -1,0 +1,250 @@
+@tablet-width: 670px;
+@desktop-width: 1050px;
+
+
+.poster {
+  background-color: #f9f9f9;
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    background-image: url("../img/poster-img.jpg");
+    background-size: 550px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    .poster__header {
+      &-list{
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .poster__header-item-a,
+        .poster__header-sale-a {
+          font-family: 'open_sansbold', Arial, sans-serif;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: bold;
+          color: #000000;
+        }
+        .poster__header-info {
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  &__text {
+    width: 260px;
+    padding-top: 75px;
+    font-family: 'open_sansbold', Arial, sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__wrapper-button {
+    margin-top: 190px;
+    .poster__subject {
+      position: relative;
+      width: 100%;
+      min-height: 105px;
+      background-color: #63d1bb;
+      .poster__subject-link {
+        display: block;
+        width: 50%;
+        font-family: 'open_sansbold', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 5px;
+        padding-top: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        &:active {
+          opacity: 0.3;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 41px;
+          height: 62px;
+
+          right: 16px;
+
+          background-image: url("../img/interior.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .poster__toys {
+      position: relative;
+      width: 100%;
+      min-height: 105px;
+      background-color: #56c3b2;
+      .poster__toys-link {
+        display: block;
+        width: 50%;
+        font-family: 'open_sansbold', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 5px;
+        padding-top: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        &:active {
+          opacity: 0.3;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 61px;
+          height: 61px;
+
+          right: 5px;
+
+          background-image: url("../img/toy.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .poster {
+    margin-bottom: 55px;
+    &__zigzag {
+      position: absolute;
+      width: 100%;
+      min-height: 34px;
+      background-image: url("../img/poster-zigzag.png");
+      background-position: center;
+      top: 826px;
+      z-index: 100;
+    }
+    &__wrapper {
+      width: 670px;
+      margin: 0 auto;
+      background-image: url("../img/poster-img.jpg");
+      background-size: 1350px;
+      background-position: center;
+      .poster__header {
+        margin: 0;
+        padding: 0;
+        &-list{
+          display: flex;
+          .poster__header-item {
+            width: 167px;
+            padding-top: 20px;
+          }
+          .poster__header-sale {
+            width: 167px;
+            padding-top: 20px;
+          }
+          .poster__header-info {
+            width: 336px;
+            text-align: right;
+            padding-top: 24px;
+          }
+        }
+      }
+    }
+    &__text {
+      width: 670px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+    &__wrapper-button {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 460px;
+        .poster__subject {
+          .poster__subject-link {
+            margin-left: 30px;
+            &::before {
+              right: 30px;
+            }
+          }
+        }
+        .poster__toys {
+          .poster__toys-link {
+            margin-left: 30px;
+            &::before {
+              right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  .poster {
+    margin-bottom: 70px;
+    &__zigzag {
+      position: absolute;
+      width: 100%;
+      min-height: 34px;
+      background-image: url("../img/poster-zigzag.png");
+      background-position: center;
+      top: 790px;
+      z-index: 100;
+    }
+    &__wrapper {
+      width: 1050px;
+      margin: 0 auto;
+      .poster__header {
+        margin: 0;
+        padding: 0;
+        &-list{
+          .poster__header-item {
+            width: 175px;
+          }
+          .poster__header-sale {
+            width: 175px;
+            text-align: center;
+          }
+          .poster__header-info {
+            width: 700px;
+            text-align: right;
+          }
+        }
+      }
+    }
+    &__text {
+      width: 66.66%;
+      margin: 0 175px;
+    }
+    &__wrapper-button {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 460px;
+      .poster__subject {
+        min-height: 115px;
+        .poster__subject-link {
+          width: 25%;
+          margin-left: 30px;
+          &::before {
+            right: 30px;
+          }
+        }
+      }
+      .poster__toys {
+        min-height: 115px;
+        .poster__toys-link {
+          width: 25%;
+          margin-left: 30px;
+          &::before {
+            right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

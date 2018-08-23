@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="less/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="page-header">
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">открыть меню</button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list logo-list">
+                <a class="logo-list__item" href="index.html"></a>
+            </ul>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a class="site-list__text" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__text" href="form.html">Вязание на заказ</a>
+                </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+                <li class="user-list__item">
+                    <form  class="user-list__search-form"  method="post" action="https://echo.htmlacademy.ru">
+                        <label class="user-list__label visually-hidden" for="search-feild">
+                            <input class="user-list__oko" type="search" name="search" size="5" id="search-feild" value="поиск по сайту">
+                        </label>
+                        <button class="user-list__search-button" type="submit">Поиск по сайту</button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="main-nav__list backet-list">
+                <li class="backet-list__item">
+                    <a class="backet-list__container" href="#">Корзина</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+</header>
+
+
+    <main class="page-main">
+
+        <section class="main-header">
+            <div class="main-header__wrapper">
+                <ul class="main-header__list">
+                    <li class="main-header__item">
+                        <a class="main-header__item-a" href="#">Новые поступления</a>
+                    </li>
+                    <li class="main-header__sale">
+                        <a class="main-header__sale-a" href="#">Распродажа</a>
+                    </li>
+                    <li class="main-header__info">Бесплатная доставка по России</li>
+                </ul>
+                <h2 class="main-header__text">Каталог товаров</h2>
+            </div>
+            <div class="main-header__zigzag"></div>
+        </section>
+
+        <section class="catalog">
+            <ul class="catalog__list catalog-group">
+                <li class="catalog-group__item">
+                    <a class="catalog-group__link" href="#">
+                        <p class="catalog-group__image">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop2x.jpg 2x">
+                                <source media="(min-width: 670px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet2x.jpg 2x">
+                                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile2x.jpg 2x" alt="catalog-group__image">
+                            </picture>
+                        </p>
+                        <div class="catalog-group__wrapper">
+                            <p class="catalog-group__name">Зайчик-попрыгайчик</p>
+                            <p class="catalog-group__info">Рост 30 см, вес 200 г</p>
+                            <p class="catalog-group__price">1200 руб.</p>
+                        </div>
+                    </a>
+                    <a class="catalog-group__button" href="#">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                    </a>
+                </li>
+                <li class="catalog-group__item">
+                    <a class="catalog-group__link" href="#">
+                        <p class="catalog-group__image">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop2x.jpg 2x">
+                                <source media="(min-width: 670px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet2x.jpg 2x">
+                                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile2x.jpg 2x" alt="catalog-group__image">
+                            </picture>
+                        </p>
+                        <div class="catalog-group__wrapper">
+                            <p class="catalog-group__name">Корзинка для белья</p>
+                            <p class="catalog-group__info">Диаметр 15 см, высота 10 см</p>
+                            <p class="catalog-group__price">690 руб.</p>
+                        </div>
+                    </a>
+                    <a class="catalog-group__button" href="#">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                    </a>
+                </li>
+                <li class="catalog-group__item">
+                    <a class="catalog-group__link" href="#">
+                        <p class="catalog-group__image">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop2x.jpg 2x">
+                                <source media="(min-width: 670px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet2x.jpg 2x">
+                                <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile2x.jpg 2x" alt="catalog-group__image">
+                            </picture>
+                        </p>
+                        <div class="catalog-group__wrapper">
+                            <p class="catalog-group__name">Большая корзинка для игрушек</p>
+                            <p class="catalog-group__info catalog-group__info--padding">Диаметр 30 см, высота 30 см</p>
+                            <p class="catalog-group__price">1500 руб.</p>
+                        </div>
+                    </a>
+                    <a class="catalog-group__button" href="#">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="production-process">
+            <div class="production-process__video">
+                <video class="production-process__video-info" src="https://media.w3.org/2010/05/sintel/trailer.mp4" controls="controls" poster="#">
+                    <source src="#">
+                </video>
+            </div>
+            <h2 class="production-process__text production-process__text--img">Процесс производства</h2>
+            <p class="production-process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production-process__button button" href="form.html"><span class="production-process__button-text">СДЕЛАТЬ ЗАКАЗ</span></a>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <a href="#" class="page-footer__logo"></a>
+            <ul class="page-footer__social">
+                <li class="page-footer__item">
+                    <a class="page-footer__link page-footer__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__link page-footer__link--twitter" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
+                </li>
+            </ul>
+            <a class="page-footer__text page-footer__text--img" href="#">Разработано</a>
+        </div>
+    </footer>
+
+    <script src="script/menu.js"></script>
+
+</body>
+</html>
