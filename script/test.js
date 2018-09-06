@@ -1,5 +1,4 @@
-var years = prompt('какое ваше имя?', "максим");
+var n = 16.4345;
 
-alert('вас зовут ' + years)
-
-result = confirm("вас определенно зовут" + years);
+alert(n.toFixed(3));
+alert(n.toFixed(6));
